@@ -1,0 +1,291 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Div Logo & Navbar */
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  font-size: 50px;
+  font-weight: 800;
+  float: left;
+  font-family: courier;
+  color: #fbd425;
+}
+
+.logo a:hover {
+  font-size: 50px;
+  font-weight: 800;
+  float: left;
+  font-family: courier;
+  color: white;
+}
+
+/* Menu Navbar */
+.menu {
+  float: right;
+}
+
+nav {
+  background-color: #134b7b;
+  color: white;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: white;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  /* text-decoration: underline; */
+  background-color: #fbd425;
+  color: black;
+  padding: 10px;
+}
+
+/* Banner */
+.banner {
+  background-color: #5584a6;
+  height: 800px;
+  text-align: center;
+  color: white;
+}
+
+.banner img {
+  border-radius: 100%;
+  height: 300px;
+  border: 6px solid white;
+  margin-top: 30px;
+}
+
+.banner a {
+  color: #134b7b;
+  background-color: #fbd425;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  color: #fbd425;
+  background-color: #134b7b;
+  border-radius: 20px;
+}
+
+/* Keyframe Infinite Jobs  */
+h2 span::before {
+  content: "";
+  animation: myJob infinite 8s ease;
+  transform: translateY(-50%);
+  text-decoration-line: underline;
+  color: #fbd425;
+  font-size: 40px;
+}
+
+@keyframes myJob {
+  0% {
+    content: "Beginner Developer";
+  }
+  40% {
+    content: "Radio Broadcaster ";
+  }
+  70% {
+    content: "Chinese Translator";
+  }
+  100% {
+    content: "Landscape Photograper";
+  }
+}
+
+/* Education */
+
+.edu {
+  /* width: 100%;
+  align-items: center; */
+}
+table {
+  /* align-items: center; */
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  text-align: center;
+  /* margin: 10px 0px; */
+}
+
+table th {
+  color: #134b7b;
+  background-color: #fbd425;
+  font-size: 40px;
+}
+table td {
+  margin: 10px 0px;
+  background-color: #5584a6;
+  width: 100px;
+  padding: 0 10px;
+}
+
+table tr td img {
+  width: 100px;
+  height: auto;
+}
+
+table p {
+  color: white;
+  padding: 10px 0px;
+}
+
+.experience {
+  text-align: center;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.experience h2 {
+  height: 80px;
+  color: #134b7b;
+  background-color: #fbd425;
+  font-size: 40px;
+  font-weight: bold;
+  align-items: center;
+  align-content: center;
+}
+
+.edu br {
+  background-color: #fbd425;
+}
+
+.boxLeft,
+.boxCenter,
+.boxRight {
+  height: 350px;
+  width: 300px;
+  color: white;
+  background-color: #5584a6;
+  text-align: center;
+  padding-top: 30px;
+  margin: 15px 20px 90px 125px;
+  float: left;
+}
+
+.experience img {
+  height: 200px;
+  width: 200px;
+}
+
+.boxLeft:hover,
+.boxCenter:hover,
+.boxRight:hover {
+  height: 350px;
+  width: 300px;
+  color: #134b7b;
+  background-color: white;
+}
+
+/* Contact */
+.contact {
+  align-items: center;
+  color: #134b7b;
+  text-align: center;
+  padding: 0px;
+}
+
+.contact h2 {
+  align-items: center;
+  background: linear-gradient(#fbd425 0%, #fbd425 40%, #fff);
+  /* border: 10px solid #134b7b; */
+  /* background-color: white; */
+  text-align: center;
+  height: 500px;
+}
+.contact img {
+  width: 60px;
+  height: 60px;
+}
+.contact .formMe {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  background-color: #134b7b;
+  color: white;
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+}
+
+@media screen and (mac-width: 991.98px) {
+  .wrapper {
+    width: 90%;
+  }
+  .logo a {
+    display: block;
+    width: 100%;
+    text-items: center;
+  }
+  .menu {
+    width: 100%;
+    margin: 0;
+  }
+  .menu ul {
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+  }
+  .menu ul li a {
+    display: inline-block;
+    float: none;
+  }
+  table tr,
+  th,
+  td {
+    margin: auto;
+    height: auto;
+    width: 20%;
+  }
+  .experience {
+    margin: auto;
+    width: 20%;
+  }
+  .contact {
+    margin: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
